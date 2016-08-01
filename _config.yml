@@ -5,7 +5,7 @@ permalink:           pretty
 title:               Alan Qiu
 tagline:             'A Programmer'
 description:         'A Programmer'
-url:                 https://alan-qiu.github.io
+url:                 https://alanjqiu.github.io
 baseurl:             ''
 gems:                [jekyll-paginate]
 paginate:            5
@@ -15,12 +15,12 @@ kramdown:
 pygements:           true
 exclude:             ['Rakefile.rb', 'CNAME', 'README.md', 'vendor']
 github:
-  repo:              https://github.com/alan-qiu/alan-qiu.github.io
+  repo:              https://github.com/alanjqiu/alanjqiu.github.io
 
 # About/contact
 author:
   name:              Alan Qiu
-  url:               https://github.com/alan-qiu
+  url:               https://github.com/alanjqiu
   email:             alan.qiu@outlook.com
 
 # Custom vars
