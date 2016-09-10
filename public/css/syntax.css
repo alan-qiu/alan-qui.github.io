@@ -1,3 +1,5 @@
+.highlight { background-color: #e2e2e2; padding: 8px; overflow-x: scroll; }
+code.highlighter-rouge { background-color: #e2e2e2; padding: 0 8px; }
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: #999; } /* Comment */
 .highlight .err { color: #a00; background-color: #faa } /* Error */
