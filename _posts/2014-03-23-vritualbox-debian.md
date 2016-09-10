@@ -16,7 +16,7 @@ Debian 7 wheezy 默认已经包含了 virtualbox 的客户系统增强功能包�
 # version: 4.1.18_Debian
 ~~~
 
-## 安装最新的增强包
+##### 安装最新的增强包
 第一步，准备编译工具
 
 ~~~sh
@@ -50,7 +50,7 @@ the guest system) to enable the Guest Additions.
 # version: 4.3.8
 ~~~
 
-## 使用缓存的 ISP
+##### 使用缓存的 ISP
 如果你的 ISP（比如赫赫有名的长城宽带） 使用了缓存技术的话，你在更新 Debian (`sudo apt-get update`) 的时候，可能会遇到类似这样的错误提示“Hash 校验和不符，无法重建软件包缓存”。引发这个错误的主要因素是 apt 下载的软件包是 ISP 缓存的，不是源服务器的。这时除了换网络，比如使用 VPN 之类的，没有办法了。
 
 最近一段时间的实践表明，Debian stable 版本一般不会出现这个问题，大约这就是软件包老的好处吧。淡然也有可能是 ISP 没有缓存我现在使用的 aliyun 源。

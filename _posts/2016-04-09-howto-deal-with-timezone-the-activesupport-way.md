@@ -10,7 +10,7 @@ tags: [active support, timezone]
 
 除非开发者所在的公司的大部分用户都在一个时区里（UTC 时区），不然就要编写涉及不同时区的软件，而这是一个令人畏惧的任务。幸好，Ruby on Rails 的 `ActiveSupport` 库提供一些非常好的、无价的特性，帮助我们处理时间相关的问题。
 
-## 内建的时区
+##### 内建的时区
 
 Rails 4.0+ 的 `ActiveSupport` 在 `TimeZone` 类中列出了所支持的所有时区：
 
@@ -23,7 +23,7 @@ ActiveSupport::TimeZone.all.map(&:name)
 
 一个有趣的细节是这个时区列表里缺少了夏令时的内容。不考虑夏令时让这个方法的使用更简单。A developer does not need to worry about using one timezone object over another due to the time of the year.（没看明白在说啥子）
 
-### `Time.use_zone`
+##### `Time.use_zone`
 
 `ActiveSupport` 库为 Ruby 的类添加了一些实用的的功能。其中的一个是可以设置和取回 `Time` 类的 `zone` 属性。一旦 `zone` 属性被设定，在 `Time` 解析传入的时间字符串时会为时间添加时区：
 
@@ -58,7 +58,7 @@ Time.zone.name
 
 当处理一组用户，并且每个用户有自己对应的时区时，临时设定 `zone` 属性的方法很有帮助。
 
-### `TimeWithZone.in_time_zone`
+##### `TimeWithZone.in_time_zone`
 
 使用 `Time` `Date` 和 `DateTime` 对象时，处理时区的转化是单调无趣的。`in_time_zone` 方法降低了这些对象的时区转化复杂度。
 

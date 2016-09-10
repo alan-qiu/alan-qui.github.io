@@ -39,11 +39,11 @@ tags: [rails]
 
 在保证数据是可用，没有重复和孤立的时候，数据库是最好的工具。
 
-## `null: false`
+##### `null: false`
 
 鉴于数据库中的大部分列都会被请求到，在定义列的时候默认 `null: false`。
 
-## `index ... unique: true`
+##### `index ... unique: true`
 
 你是否了解到 rails 的 `has_one` 方法并不阻止重复的相关项被创建？
 
@@ -65,7 +65,7 @@ tags: [rails]
 
 之后，当你不小心重复创建了相关项时，数据库会抛出错误。
 
-## `foreign_key`
+##### `foreign_key`
 
 你不希望有几行数据在数据库里是鼓励的吧？
 
