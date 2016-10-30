@@ -1,4 +1,4 @@
-.highlight { background-color: #e2e2e2; padding: 8px; overflow-x: scroll; }
+.highlight { background-color: #e2e2e2; padding: 8px; overflow-x: auto; }
 code.highlighter-rouge { background-color: #e2e2e2; padding: 0 8px; }
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: #999; } /* Comment */
