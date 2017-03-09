@@ -51,3 +51,9 @@
  .posts-archive .mdl-list__item {
    padding: 0;
  }
+
+/* body */
+
+.demo-content img {
+  width: 100%;
+}
