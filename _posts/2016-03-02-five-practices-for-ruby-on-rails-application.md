@@ -9,15 +9,15 @@ tags: [rails]
 * toc
 {:toc}
 
-# 使用 `Hash#fetch` 拦截畸形的 hash
+#### 使用 `Hash#fetch` 拦截畸形的 hash
 
 `unexpected method 'upcase' for nil`... 任何时候，只要你期望一个 Hash 包含至少一个键值，那就使用 `fetch()` 而不是 `[]`。如果 Hash 中没有键值，`fetch()` 会抛出一个错误，阻止把 `nil` 传递出去，阻止 `nil` 引发的一条和上下文不想关的错误。
 
-# `case ... else raise` 拦截无效的数据
+#### `case ... else raise` 拦截无效的数据
 
 总是在 `case` 语句结束的时候添加 `case rails ...`。当个收到一个异常的值是，你会想知道是什么时候出现的，而不是忽略它继续。
 
-# 使用 ActiveRecord 的 `!` 方法显示的报错
+#### 使用 ActiveRecord 的 `!` 方法显示的报错
 
 在公司里，数据总是被看作是最有价值的资产。错误静默模式下写入数据会造成巨大的影响（坏的）。只要你不想一个操作失败，那就使用爆炸性方法，`create!` `update!` 和 `destroy!`，来抛出异常当操作失败时。这个做法会保证你远离不一致数据的处理。
 
@@ -25,7 +25,7 @@ tags: [rails]
 
 同样的，总是把多个调用放在一个 SQL 事物里，防止数据处于 in-between 状态。
 
-# 使用 ActiveRecord 的验证进行 live check
+#### 使用 ActiveRecord 的验证进行 live check
 
 联合使用 ActiveRecord 验证和爆炸性方法是一个绝佳的阻止写入无效数据的方法。例如
 
@@ -35,7 +35,7 @@ tags: [rails]
       validates :comment_count, numericality: { greater_or_equal_to: 0 }
     end
 
-# 使用数据库一致性来保证数据的一致
+#### 使用数据库一致性来保证数据的一致
 
 在保证数据是可用，没有重复和孤立的时候，数据库是最好的工具。
 
@@ -71,7 +71,7 @@ tags: [rails]
 
 外键就是用来预防上述事情发生的工具。作者推荐使用 gem [shcema_auto_foreign_keys](https://github.com/SchemaPlus/schema_auto_foreign_keys) 来自动添加外键。
 
-# 越少的 keystrokes 越好
+#### 越少的 keystrokes 越好
 
 越少使用额外的 keystrokes，越少的时间花在 debugging 和修复不一致的数据上。使用 `!`, `raise`, `validate` 和数据库的一致性，你的合作者和未来的你都会因此感谢你。
 
