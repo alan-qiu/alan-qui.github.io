@@ -1,5 +1,6 @@
-# Permalinks
-permalink:           pretty
+# Global
+permalink:           none
+timezone:            'Europe/Amsterdam'
 
 # Setup
 title:               Alan Qiu
