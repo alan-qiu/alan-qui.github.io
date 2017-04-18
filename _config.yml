@@ -4,8 +4,8 @@ timezone:            'Europe/Amsterdam'
 
 # Setup
 title:               Alan Qiu
-tagline:             'A Programmer'
-description:         'A Programmer'
+tagline:             'Web Developer/Scientific Programmer'
+description:         'Web Developer/Scientific Programmer'
 url:                 https://alanjqiu.github.io
 baseurl:             ''
 markdown:            kramdown
