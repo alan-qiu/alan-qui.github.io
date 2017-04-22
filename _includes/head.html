@@ -1,10 +1,8 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="description" content="A blog of a web developer/compute programmer.">
-
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="A blog about web development/compute programming.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
     {% if page.title == "Home" %}
@@ -15,10 +13,10 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-orange.min.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main.css">
+  <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/public/css/normalize.css">
+  <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/public/css/pure-min.css">
+  <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/public/css/main.css">
 
   <!-- Icons -->
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
@@ -27,6 +25,5 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
   <!-- JS -->
-  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   <script defer src="{{ site.baseurl }}/public/js/analytics.js"></script>
 </head>
