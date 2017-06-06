@@ -13,14 +13,14 @@ title: About
 
 ### 技术列表
 
-偶然看到[一篇讲述作者技术历史的文章](http://blog.rainy.im/2015/01/04/rainy-of-all-trade/)，本文作者也想罗列下自己的技术历史做备忘用，主要讲诉作者使用／放弃该技术的原因和体验。
+偶然看到[一篇讲述作者技术历史的文章](https://github.com/rainyear/new-blog-source/blob/master/content/rainy-of-all-trade.md)，本文作者也想罗列下自己的技术历史做备忘用，主要讲诉作者使用／放弃该技术的原因和体验。
 
 #### 当前
 
-- 语言 `HTML JavaScript PHP R SQL Ruby`
-- 框架/库 `Bootstrap Laravel Rails React`
+- 语言 `Elixir HTML JavaScript PHP R SQL Ruby`
+- 框架/库 `Bootstrap Laravel Phoenix Rails React`
 - 版本管理 `Bitbucket Git Github`
-- 开发环境 `Atom NixOS OS X Vim VSCode`
+- 开发环境 `Atom NixOS Mac OS NeoVim VSCode`
 - 部署/运维 `Mina MongoDB Nginx PostgreSQL Puma Ubuntu`
 
 #### 历史
@@ -43,4 +43,3 @@ title: About
 #### 再来
 
 - `PHP`：入门 Web 开发时学习。转向 Ruby on Rails。之后参与小项目，再次使用。
-
