@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-25 21:19:00 +1000
+modified: 2017-04-25 21:19:00 +1000
 title: Phoenix 中 View 和 Template 的区别（译）
 ---
 
