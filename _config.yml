@@ -1,12 +1,8 @@
 # Global
 permalink:           none
-timezone:            'Europe/Amsterdam'
 
 # Setup
 title:               又一个 Web 开发／科学编程者
-# title:               Alan Qiu
-# tagline:             'Web Developer/Scientific Programmer'
-# description:         'Web Developer/Scientific Programmer'
 url:                 https://alanjqiu.github.io
 baseurl:             ''
 markdown:            kramdown
@@ -21,7 +17,6 @@ github:
 author:
   name:              Alan Qiu
   url:               https://github.com/alanjqiu
-  email:             alanjqiu@gmail.com
 
 # Custom vars
-version:             1.4.0
+version:             1.5.0

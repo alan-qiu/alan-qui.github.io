@@ -5,7 +5,7 @@ layout: default
 <article class="post">
   <header>
     <h2>{{ page.title }}</h2>
-    <p>{{ page.date | date_to_string }}</p>
+    <p>编写/修改于 {{ page.modified | date_to_string }}</p>
   </header>
-  <section class="post-content">{{ content }}</section>
+  <section>{{ content }}</section>
 </article>

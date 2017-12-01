@@ -1,17 +1,50 @@
 /*
  * common settings
  */
-a {
-  text-decoration: none;
+body {
+  font-family: "Source Han Sans", helvetica, Arial, sans-serif;
+  line-height: 2;
 }
 
- /*
-  * post
-  */
-.post {
-  padding: 8px 16px;
+.main {
+  max-width: 600px;
+  margin: 50px auto 50px;
 }
 
-.post-content {
-  line-height: 1.5;
+h1, h2, h3, h4, h5, h6 {
+  text-align: left
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto
+}
+
+code, pre {
+  font-family: Consolas, Menlo, monospace;
+  padding: 0 .25em;
+  background-color: #eceff1;
+}
+
+code.nobg {
+  background-color: #FFF;
+}
+
+pre {
+  padding: 1em
+}
+
+a:link {
+  color: #000;
+  text-decoration: underline
+}
+
+a:hover {
+  text-decoration: none
+}
+
+hr {
+  margin: 25px auto 25px
 }
