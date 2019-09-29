@@ -1,22 +1,22 @@
 # Global
-permalink:           none
+permalink: none
 
 # Setup
-title:               又一个 Web 开发／科学编程者
-url:                 https://alanjqiu.github.io
-baseurl:             ''
-markdown:            kramdown
+title: WDSP
+url: https://alanjqiu.github.io
+baseurl: ""
+markdown: kramdown
 kramdown:
-  input:             GFM
-pygements:           true
-exclude:             ['Rakefile.rb', 'CNAME', 'README.md', 'vendor']
+  input: GFM
+pygements: true
+exclude: ["Rakefile.rb", "CNAME", "README.md", "vendor"]
 github:
-  repo:              https://github.com/alanjqiu/alanjqiu.github.io
+  repo: https://github.com/alanjqiu/alanjqiu.github.io
 
 # About/contact
 author:
-  name:              Alan Qiu
-  url:               https://github.com/alanjqiu
+  name: Alan Qiu
+  url: https://github.com/alanjqiu
 
 # Custom vars
-version:             1.5.0
+version: 1.6.0
