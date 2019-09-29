@@ -2,49 +2,45 @@
  * common settings
  */
 body {
-  font-family: "Source Han Sans", helvetica, Arial, sans-serif;
-  line-height: 2;
+  font-family: "Source Han Sans", sans-serif;
+  line-height: 2rem;
 }
 
 .main {
-  max-width: 600px;
-  margin: 50px auto 50px;
+  max-width: 40rem;
+  margin: 3rem auto 3rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-align: left
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: auto
+  margin: auto;
 }
 
-code, pre {
-  font-family: Consolas, Menlo, monospace;
-  padding: 0 .25em;
-  background-color: #eceff1;
-}
-
-code.nobg {
-  background-color: #FFF;
-}
-
+code,
 pre {
-  padding: 1em
+  font-family: "Fira Code", "Cascadia Code", monospace;
 }
 
 a:link {
   color: #000;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 hr {
-  margin: 25px auto 25px
+  margin: 1.5rem auto 1.5rem;
 }
