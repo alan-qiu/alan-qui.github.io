@@ -5,13 +5,15 @@ title: About
 
 # About
 
+WDSP => Web Development and Scientific Programming
+
 ## About Stie
 
 初衷和目标都是想写点值得分享的和程序相关的笔记。
 
 ## About Me
 
-努力进化为程序员的（自由）码农。
+用代码解决尽可能多的问题。
 
 ## 技术列表
 
@@ -19,11 +21,10 @@ title: About
 
 ### 当前
 
-- 语言 `Elixir F# HTML JavaScript R SQL Ruby`
-- 框架/库 `Bootstrap Phoenix Pure Rails React`
-- 版本管理 `Bitbucket Git Github`
-- 开发环境 `Fedora NeoVim SQLite OS X VSCode`
-- 部署/运维 `Mina MongoDB Nginx NixOS PostgreSQL Puma Ubuntu`
+- 语言 `Elixir HTML JavaScript Python R ReasonML SQL Ruby`
+- 框架 `Bootstrap Phoenix PureCSS Rails React`
+- 版本 `Bitbucket Git Gitlab Github`
+- 工具 `NeoVim Mina Nginx PostgreSQL Puma SQLite OS X Ubuntu VSCode`
 
 ### 历史
 
@@ -31,14 +32,22 @@ title: About
 - `C`：编程的入门语言，读伟大的谭老师的书。不再使用，计划转向 `Rust`。
 - `Capistrano`：公司项目使用，不是作者的菜，不如 `Mina` 的体验好。继续 `Mina`。
 - `Coffee`：从 `Rails` 中了解到，不错的书写 `JavaScript` 的语言。转向 `ES6` & `ReasonML`。
+- `F#`: 不在 Windows 平台上生活。
 - `GitCafe`：关门大吉了。
 - `Gulp`：在公司写 `AngularJS` 时使用，转向 `Webpack`。
 - `jQuery`：操作 `DOM` 的利器，开始学习 `JavaScript` 时接触，在公司项目中使用。不是作者的菜。
 - `Java`：好像完成了 Hello World。不是作者的菜。
-- `Matlab`：做数值计算，转向 `F#` & `Julia` & `R`。
+- `Matlab`：做数值计算，转向 `F#/Julia/Python/R`。
+- `MongoDB`: 工作项目使用，默认使用 `PostgreSQL`。
+- `NixOS`: 转向 `Guix/GuixSD`，虽然是更小众的技术。
 - `Node`：想写个 Desktop App 时使用 `NW.js`（`NodeWebkit`）。
 - `PHP`：入门 Web 开发时学习。转向 `Ruby on Rails`。之后参与小项目，再次使用。
-- `Python`：动态脚本语言的启蒙，朋友在用，想学来用用。
 - `Phusion Passenger`：公司项目使用。还是喜欢开源／自由软件。转 `Puma`。
 - `Subversion`：开始了解什么是版本管理时接触过，没有真的用过。之前在 `code.google.com` 上作练习。还是喜欢 `Git`。
-- `Unicorn`：公司项目使用，跟风选择 `Puma`。
+- `Unicorn`：工作项目使用，跟风选择 `Puma`。
+
+### 心愿
+
+- `Guix/GuixSD`
+- `Haskell`
+- `Tailwind CSS`
