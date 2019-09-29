@@ -1,13 +1,12 @@
 ---
 layout: post
 date: 2016-03-14
-modified: 2016-03-14
-title: 一个迭代方法（译）
-tags: [ruby,enumerable,each_cons]
+modified: 2019-09-30
+title: 一个迭代方法
+tags: [ruby, enumerable, each_cons]
 ---
 
-* toc
-{:toc}
+原文 《[enumerable methods](http://www.blackbytes.info/2016/03/enumerable-methods/)》
 
 Enumerable 是一个令人惊奇的模块，也是使得 Ruby 成为伟大的编程语言的重要原因。
 
@@ -58,9 +57,4 @@ end
 
 之后，返回一个数组的 `dup` 如果数组的大小正好等于我们预期的数值。
 
-作者认为这是一个天才的实现，因为it keeps a ‘sliding window’ sort of effect into our enumerable object, instead of having to mess around with array indexes.
-
----
-
-翻译，为了阅读和练习。原文在这里[http://www.blackbytes.info/2016/03/enumerable-methods/](http://www.blackbytes.info/2016/03/enumerable-methods/)。
-
+作者认为这是一个天才的实现，因为 it keeps a 'sliding window' sort of effect into our enumerable object, instead of having to mess around with array indexes.

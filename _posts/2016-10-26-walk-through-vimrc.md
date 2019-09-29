@@ -1,10 +1,12 @@
 ---
 layout: post
 date: 2016-10-26
-modified: 2016-10-26
-title: 面向 ruby 开发巡查 .vimrc 文件（译）
-tags: ['walk through', 'ruby', 'vimrc']
+modified: 2019-09-28
+title: 面向 ruby 开发巡查 .vimrc 文件
+tags: ["walk through", "ruby", "vimrc"]
 ---
+
+原文 http://janjiss.com/walkthrough-of-my-vimrc-file-for-ruby-development/
 
 有很多人希望使用 vim 作为他们的文本编辑器。但是有很多问题会吓退这些新来者，其中一个是为了更好的工作而编写自己的扩展配置文件。这就是作者编写这篇巡查自己的 .vimrc，解释文件每一行配置的原因。话说白了，这么做会让作者更好的明白自己的 vimrc 配置，并删除无用的配置。依据这个想法，让我们开始吧：
 
@@ -20,12 +22,12 @@ tags: ['walk through', 'ruby', 'vimrc']
 这几行是初始化 Vundle 插件需要的。This plugin is responsible for managing dependencies. Next lines are just plugin definitions, where the string is github repository.
 
     " Dependencies of snipmate
-    Bundle "MarcWeber/vim-addon-mw-utils"  
-    Bundle "tomtom/tlib_vim"  
+    Bundle "MarcWeber/vim-addon-mw-utils"
+    Bundle "tomtom/tlib_vim"
     Bundle "honza/vim-snippets"
 
     " Snippets for our use :)
-    Bundle 'garbas/vim-snipmate'  
+    Bundle 'garbas/vim-snipmate'
 
 开始的几行配置了 snipmate 的依赖，snipmate 用来自动补全很多表达式。比如，你输入 `def<tab>`，就会自动补全成
 
@@ -43,12 +45,12 @@ Bundle 'tpope/vim-fugitive'
 有很多工具让 VIM 和 GIT 很好的配合。作者这里不展开细节，请阅读相关文档。
 
     " Dependency managment
-    Bundle 'gmarik/vundle'  
+    Bundle 'gmarik/vundle'
 
 依赖管理插件本身。
 
     " Rails :/
-    Bundle 'tpope/vim-rails.git'  
+    Bundle 'tpope/vim-rails.git'
 
 有很多工具来方便 rails 的开发。作者会列出其中的一些。
 
@@ -58,7 +60,7 @@ Bundle 'tpope/vim-fugitive'
 这个插件允许你注释／反注释你的代码块。作者一般使用 `gc` 来注释／反注释代码。
 
     " Molokai theme
-    Bundle 'tomasr/molokai'  
+    Bundle 'tomasr/molokai'
 
 Molokai 样式。
 
@@ -69,7 +71,6 @@ Ruby 语法高亮。
 
     " Surround your code :)
     Bundle 'tpope/vim-surround'
-
 
 Great plugin if you want to change braces to curly braces or p tag to div tag or any other combination that you might imagine. Make sure to check it out.
 
@@ -113,14 +114,14 @@ This plugin is used to dispatch the tests to tmux pane and then output to a hori
 
     " Ruby stuff: Thanks Ben :)
     " ================
-    syntax on                 " Enable syntax highlighting  
+    syntax on                 " Enable syntax highlighting
     filetype plugin indent on " Enable filetype-specific indenting and plugins
 
-    augroup myfiletypes  
+    augroup myfiletypes
         " Clear old autocmds in group autocmd!
         " autoindent with two spaces, always expand tabs
         autocmd FileType ruby,eruby,yaml,markdown set ai sw=2 sts=2 et
-    augroup END  
+    augroup END
     " ================
 
 为 ruby、eruby、yaml 和 markdown 文件显示设置两个空格的缩进。
@@ -131,10 +132,10 @@ This plugin is used to dispatch the tests to tmux pane and then output to a hori
 开启语法高亮。
 
     " Configs to make Molokai look great
-    set background=dark  
-    let g:molokai_original=1  
-    let g:rehash256=1  
-    set t_Co=256  
+    set background=dark
+    let g:molokai_original=1
+    let g:rehash256=1
+    set t_Co=256
     colorscheme molokai
 
 配置 Molokai 样式。
@@ -151,16 +152,16 @@ This plugin is used to dispatch the tests to tmux pane and then output to a hori
 启用行号。
 
     " My leader key
-    let mapleader=","  
+    let mapleader=","
 
 作者使用 `,` 作为 mapleader，因为这么做在 OS X 下比较方便。
 
     " Searching
-    set hlsearch  
+    set hlsearch
 
 高亮搜索的内容。
 
-   set incsearch  
+set incsearch
 
 Searches incremetally as you type.
 
@@ -178,19 +179,19 @@ Searches incremetally as you type.
 使用 `,Enter` 清除搜索时的高亮。
 
     " Buffer switching
-    map <leader>p :bp<CR> " ,p previous buffer  
-    map <leader>n :bn<CR> " ,n next buffer  
+    map <leader>p :bp<CR> " ,p previous buffer
+    map <leader>n :bn<CR> " ,n next buffer
     map <leader>d :bd<CR> " ,d delete buffer
 
 作者经常跳转、删除不同的 buffers。上面的配置解释了作者是怎么做的。
 
-    map <Leader>c :call <CR>  
-    nmap <silent> <leader>c :TestFile<CR>  
+    map <Leader>c :call <CR>
+    nmap <silent> <leader>c :TestFile<CR>
     nmap <silent> <leader>s :TestNearest<CR>
 
 使用 `,c` 运行当前测试文件，使用 `,s` 运行光标所在的测试。
 
-    map <leader>t :A<CR> " \t to jump to test file  
+    map <leader>t :A<CR> " \t to jump to test file
     map <leader>r :r<cr> " \t to jump to related file
 
 这些命令来自 rails-vim。允许作者跳转到对应的测试文件。
@@ -200,34 +201,34 @@ Searches incremetally as you type.
 列出当前文件的状态。
 
     " Don't be a noob, join the no arrows key movement
-    inoremap  <Up>     <NOP>  
-    inoremap  <Down>   <NOP>  
-    inoremap  <Left>   <NOP>  
-    inoremap  <Right>  <NOP>  
-    noremap   <Up>     <NOP>  
-    noremap   <Down>   <NOP>  
-    noremap   <Left>   <NOP>  
+    inoremap  <Up>     <NOP>
+    inoremap  <Down>   <NOP>
+    inoremap  <Left>   <NOP>
+    inoremap  <Right>  <NOP>
+    noremap   <Up>     <NOP>
+    noremap   <Down>   <NOP>
+    noremap   <Left>   <NOP>
     noremap   <Right>  <NOP>
 
 这些行的配置可以使你避免使用方向键移动。
 
     " Removing escape
-    ino jj <esc>  
-    cno jj <c-c>  
+    ino jj <esc>
+    cno jj <c-c>
     vno v <esc>
 
 在任何时候通过按下 `jj` 可以回到 normal 模式，而不用按下 ESC 键。
 
     " highlight the current line
-    set cursorline  
+    set cursorline
     " Highlight active column
     set cuc cul"
 
 就像注释说的，高亮当前的行和列。
 
     " Tab completion
-    set wildmode=list:longest,list:full  
-    set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*  
+    set wildmode=list:longest,list:full
+    set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 tab 自动补全。
 
@@ -244,16 +245,10 @@ tab 自动补全。
 
 每次复制、粘贴都会和系统粘贴板交互。非常有用。
 
-    if has('nvim')  
+    if has('nvim')
       let test#strategy = "neovim"
-    else  
+    else
       let test#strategy = "dispatch"
     endif
 
 这几行设置测试策略。作者有时使用 neovim，看具体条件。在使用 vim 时，作者使用 dispatch 插件在 tmux 的 pane 中运行测试，使用 neovim 时，作者在内建的终端里运行测试。
-
----
-
-为了阅读和练习翻译而翻译了这篇文字，[原文在这里](http://janjiss.com/walkthrough-of-my-vimrc-file-for-ruby-development/)。如有异议、建议或其他什么，请 issue 或 Email，谢谢。
-
-读完后，译者也想整理下自己的 vimrc。

@@ -1,11 +1,9 @@
 ---
 layout: post
 date: 2013-07-08 00:00:00 +1000
-modified: 2013-07-08 00:00:00 +1000
+modified: 2019-09-30 00:00:00 +1000
 title: gentoo 中 rc 的启动日志设置
 ---
-* toc
-{:toc}
 
 有的时候在启动系统的过程中，我们会在屏幕上看到一些 fail 或者 error 的消息，但是等到出现登录命令行的时候，这些消息已经不在屏幕上了。怎么查看他们呢？
 
@@ -15,7 +13,7 @@ title: gentoo 中 rc 的启动日志设置
 
 查看 `/var/log` 是否包含 `rc.log` 这个文件（我们假设使用默认的日志文件名），如果没有那个文件，那么我们需要查看 `rc` 的配置文件 `/etc/rc.conf`。查找 `rc_logger` 关键字，我们可以发现如下内容:
 
-~~~ sh
+```sh
 # rc_logger launches a logging daemon to log the entire rc process to
 # /var/log/rc.log
 # NOTE: Linux systems require the devfs service to be started before
@@ -24,11 +22,11 @@ title: gentoo 中 rc 的启动日志设置
 # Through rc_log_path you can specify a custom log file.
 # The default value is: /var/log/rc.log
 #rc_log_path="/var/log/rc.log"
-~~~
+```
 
 现在我们需要做的就是把如下两句的注释取消。
 
-~~~ sh
+```sh
 rc_logger="YES"
 rc_log_path="/var/log/rc.log"
-~~~
+```
