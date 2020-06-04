@@ -1,0 +1,5 @@
+= jQiu
+
+一些笔记和分享。
+
+采用[知识共享署名-非商业性使用-相同方式共享 4.0 许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)。

@@ -1,0 +1,75 @@
+= 关于
+
+== 仓库
+
+初衷和目标都是想写点值得分享的和程序相关的笔记。
+
+== 我
+
+又一个 Web 开发者和科学计算人员
+
+用代码解决尽可能多的问题。
+
+== 技术列表
+
+偶然看到[一篇讲述作者技术历史的文章](https://github.com/rainyear/new*blog-source/blob/master/content/rainy-of-all-trade.md)，本文作者也想罗列下自己的技术历史做备忘用，主要讲诉作者使用／放弃该技术的原因和体验。
+
+=== 当前
+
+* Alpine Linux
+* Bootstrap
+* Bitbucket
+* Elixir
+* FreeBSD
+* Git
+* Gitlab
+* Github
+* HTML
+* JavaScript
+* Mina
+* NeoVim
+* Nginx
+* OS X
+* Phoenix
+* PostgreSQL
+* Puma
+* R
+* React
+* Ruby
+* Ruby on Rails
+* SQL
+* SQLite
+* VSCode
+* Webpack
+* WSL
+
+=== 历史
+
+* `AngularJS`：学习如何组织 `JavaScript` 代码时学习的框架。转向 `Reactjs`。
+* `C`：编程的入门语言，读伟大的谭老师的书。计划转向 `Rust`。
+* `Capistrano`：公司项目使用，不是作者的菜，不如 `Mina` 的体验好。
+* `Coffee`：从 `Rails` 中了解到，不错的书写 `JavaScript` 的语言。转向 `ES6` & `ReasonML`。
+* `Debian`：转 WSL 中的 Alpine Linux 和 作为 Server 的 FreeBSD。
+* `F#`: 不在 Windows 平台上生活。
+* `GitCafe`：关门大吉了。
+* `Gulp`：在公司写 `AngularJS` 时使用，转向 `Webpack`。
+* `jQuery`：操作 `DOM` 的利器，开始学习 `JavaScript` 时接触，在公司项目中使用。
+* `Matlab`：做数值计算，转向 `Julia/R`。
+* `MongoDB`: 工作项目使用，默认使用 `PostgreSQL`。
+* `NixOS`: 转向 `Guix/GuixSD`，虽然是更小众的技术。
+* `Node`：想写个 Desktop App 时使用 `NW.js`（`NodeWebkit`）。
+* `PHP`：入门 Web 开发时学习。转向 `Ruby on Rails`。之后参与小项目时再次使用。
+* `Phusion Passenger`：公司项目使用。默认 `Puma`。
+* `Subversion`：开始了解什么是版本管理时接触过，没有真的用过。之前在 `code.google.com` 上作练习。还是喜欢 `Git`。
+* `Vim`：转 Neovim 和 VSCode。
+* `Virtualbox`：转 WSL。
+* `Unicorn`：工作项目使用，默认 `Puma`。
+
+=== 心愿
+
+* `Erlang`
+* `Guix/GuixSD`
+* `Julia`
+* `ReasonML`
+* `Rust`
+* `Tailwind CSS`
